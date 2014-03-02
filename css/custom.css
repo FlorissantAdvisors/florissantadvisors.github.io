@@ -1,0 +1,73 @@
+@keyframes tenSecFade {
+  0%    { opacity:1; }
+  45%   { opacity:1; }
+  55%   { opacity:0; }
+  100%  { opacity:0; }
+}
+
+@-webkit-keyframes tenSecFade {
+  0%    { opacity:1; }
+  45%   { opacity:1; }
+  55%   { opacity:0; }
+  100%  { opacity:0; }
+}
+
+#fadeSwap {
+  position: relative;
+  height:400px;
+  width:600px;
+  margin:0 auto;
+}
+
+#fadeSwap img {
+  position: absolute;
+  left: 0;
+  /*
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  */
+}
+
+/*
+#fadeSwap img.top:hover {
+  opacity:0;
+}*/
+
+#fadeSwap img.top {
+    animation-name: tenSecFade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    -webkit-animation-name: tenSecFade;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-direction: alternate;
+}
+
+.answer {
+  display:none;
+}
+
+.question {
+  text-decoration:underline
+}
+
+.w-box {
+  /*padding: 0 7em 0 7em; */
+  margin: 0 1em 0 1em;
+  border-style: dotted;
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.w-box .cbp-nttrigger {
+  color: white; 
+}
+.w-box .cbp-ntcontent {
+  margin:0 3em 0 3em;
+  line-height: 1.4;
+}
