@@ -14,26 +14,20 @@
 
 #fadeSwap {
   position: relative;
-  height:400px;
-  width:600px;
-  margin:0 auto;
+  clear: both;
+  /*height:400px;
+  width:600px;  */
+  margin:0 auto 0 auto;
 }
 
 #fadeSwap img {
-  position: absolute;
-  left: 0;
-  /*
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  */
-}
+  position: absolute; 
+    left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
 
-/*
-#fadeSwap img.top:hover {
-  opacity:0;
-}*/
+}
 
 #fadeSwap img.top {
     animation-name: tenSecFade;
