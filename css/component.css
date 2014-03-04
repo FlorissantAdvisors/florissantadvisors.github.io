@@ -108,13 +108,19 @@
 .cbp-ntaccordion .cbp-ntcontent {
 	height: 0;
 	overflow: hidden;
+    
 }
 
 /* When open, set height to auto */
 .cbp-ntaccordion .cbp-ntopen > .cbp-ntcontent,
 .cbp-ntsubaccordion .cbp-ntopen > .cbp-ntcontent,
 .no-js .cbp-ntaccordion .cbp-ntcontent {
-	height: auto;
+	padding:0.5%;
+    height: auto;
+    color: white;
+    font-family: Avenir;
+    font-size: 125%;
+    
 }
 
 /* Example for media query */
