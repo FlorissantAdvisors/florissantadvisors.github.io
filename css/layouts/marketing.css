@@ -15,7 +15,7 @@
 body {
     line-height: 1.7em;
     color: #7f8c8d;
-    font-size: 13px;
+    font-size: 62.5%;
 }
 
 h1,
@@ -171,7 +171,7 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 50px;
+    font-size: 2em;
     font-weight: bold;
     color: white;
     border: 3px solid white;
