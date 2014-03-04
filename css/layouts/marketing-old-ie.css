@@ -23,6 +23,8 @@ h5,
 h6,
 label {
   color: #34495e;
+ 
+    
 }
 
 .pure-img-responsive {
@@ -292,3 +294,6 @@ body {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
+h3 {
+    
+}
