@@ -54,8 +54,8 @@
   /*padding: 0 7em 0 7em; */
   margin: 0 1em 0 1em;
   border-style: dotted;
-  max-height: 400px;
-  overflow: scroll;
+  //max-height: 400px;
+  overflow: auto;
 }
 
 .w-box .cbp-nttrigger {
