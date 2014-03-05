@@ -51,9 +51,9 @@
 }
 
 .w-box {
-  /*padding: 0 7em 0 7em; */
+  padding: 3em 7em 0 7em; */
   margin: 0 1em 0 1em;
-  border-style: dotted;
+  //border-style: dotted;
   //max-height: 400px;
   overflow: auto;
 }
