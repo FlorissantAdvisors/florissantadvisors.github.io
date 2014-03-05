@@ -350,12 +350,12 @@ h3 {
 }
 
 .processcaptions {
-    //font-weight: bold;
+    font-weight: bold;
     //font-style: italic;
-    //font-family: Avenir;
-    font-family: "proxima nova";
+    font-family: Avenir;
+    //font-family: "proxima nova";
     word-spacing:1px;
-    font-size: 120%
+    font-size: 1.5em;
         
 	
 }
