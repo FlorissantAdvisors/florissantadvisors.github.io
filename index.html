@@ -24,6 +24,8 @@
     
     <link rel="stylesheet" type="text/css" href="css/Process/componentProcess.css" />
     <link rel="stylesheet" type="text/css" href="css/Process/defaultProcess.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/componentVision.css" />
     <script src="js/modernizr.custom.js"></script> 
     
     
@@ -50,30 +52,125 @@
             </p>
         </div>
     </div>
-    <div class="content-wrapper">
-        <a class="anchor" id="vision"></a>
+
+
+                
+                
+        <div class="content-wrapper">
+        <a class="anchor" id="vision"></a>                
         <div class="content ribbon">
-          <h1 class="vision-head is-center">Our Vision</h1>
-          <div class="pure-g l-box pure-u-1">
-            <p class="vision-text">
-            A business's success depends on its interactions with multiple 
-            parties. These interactions between management, suppliers,
-            employees, and ultimately customers are open to negotiations.
-            The nature of which can be like a risky battle for precious
-            resources or a passive acceptance of the status-quo; but it can
-            also be an opportunity to discover untapped possibilities. What
-            often keeps these interactions from fulfilling their potential
-            are ill-defined preferences, a narrow or short-sighted outlook,
-            and an ever-present skepticism of the human participant on the 
-            other side. Typically, one or both parties are left wondering 
-            if more could be done. Our vision is to leverage technology so parties can be sure
-            they've got a great deal and focus instead on their strengths
-            and building meaningful relationships. In practice, this means
-            your employees will quit less often, you'll have more repeat
-            customers, and your suppliers will have your interests in mind.
-            </p>
-          </div>
+            <h1 class="vision-head is-center"> Our Vision </h1>                    
+              <div class="pure-g l-box pure-u-1">  
+    
+                  
+                  <div class="mainVision">
+                    <div id="cbp-qtrotator" class="cbp-qtrotator">
+                                <div class="cbp-qtcontent current">
+                                    <img src="http://tympanus.net/Blueprints/QuotesRotator/images/1.jpg" alt="img01" />
+                                    <blockquote>
+                                        <p>A business's success depends on the interactions between multiple parties. 
+                                            These interactions between management, suppliers, employees, and ultimately
+                                        customers are typically taken for granted. We see these as open to negotiation. 
+                                            We see these as open for optimization.
+                                        </p>
+
+                                    </blockquote>
+                                </div>
+                                <div class="cbp-qtcontent">
+                                    <img src="http://tympanus.net/Blueprints/QuotesRotator/images/2.jpg" alt="img02" />
+                                    <blockquote>
+                                        <p>Negotiations can be like a risky battle for precious resources or a passive
+                                    acceptance of the status-quo. We see them as an opportunity to discover 
+                                    untapped possibilities. </p>
+
+                                    </blockquote>
+                                </div>
+                                <div class="cbp-qtcontent">
+                                    <img src="http://tympanus.net/Blueprints/QuotesRotator/images/3.jpg" alt="img03" />
+                                    <blockquote>
+                                     <p>What often keeps negotiaitons from fulfilling their potential are ill-defined
+                                    preferences, a narrow or short-sighted outlook, and an ever-present skepticism 
+                                    of the human participant on the other side. As impartial mediators, we work
+                                    with all parties to understand and formalize their preferences. We are "for" 
+                                    both sides.</p>
+
+                                    </blockquote>
+                                </div>
+                                <div class="cbp-qtcontent">
+                                    <img src="http://tympanus.net/Blueprints/QuotesRotator/images/3.jpg" alt="img03" />
+                                    <blockquote>
+                                    <p>After a typical negotiaiton, one or both parties are left wondering if more 
+                                    could be done. Our vision is to leverage technology so parties can be sure
+                                    they've got a great deal and focus instead on their strengths and building 
+                                    meaningful relationships.</p>
+
+                                    </blockquote>
+                                </div>
+                                <div class="cbp-qtcontent">
+                                    <img src="http://tympanus.net/Blueprints/QuotesRotator/images/3.jpg" alt="img03" />
+                                    <blockquote>
+                                     <p>Negotiations settled with Florissant mean your employees will quit less often,
+                                    you'll have more repeat customers, and your suppliers will have your interests
+                                    in mind.</p>
+
+                                    </blockquote>
+                                </div>
+
+                                <div class="cbp-qtcontent">
+                                    <img src="http://tympanus.net/Blueprints/QuotesRotator/images/4.jpg" alt="img04" />
+                                    <blockquote>
+                                        <p>Florissant Advisors. Negotiation for the 21st century.</p>
+
+                                    </blockquote>
+                                </div>
+                                <span class="cbp-qtprogress"></span>
+                            </div>
+                        </div>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                //Quotes rotator
+                                var divs = $('.cbp-qtcontent');
+
+                                function fade() {
+                                    var current = $('.current');
+                                    var currentIndex = divs.index(current),
+                                        nextIndex = currentIndex + 1;
+
+                                    if (nextIndex >= divs.length) {
+                                        nextIndex = 0;
+                                    }
+
+                                    var next = divs.eq(nextIndex);
+
+                                    next.stop().fadeIn(1500, function() {
+                                        $(this).addClass('current');
+                                    });
+
+                                    current.stop().fadeOut(1500, function() {
+                                        $(this).removeClass('current');
+                                        _startProgress()
+                                        setTimeout(fade, 8000);
+                                    });
+                                }
+
+                                function _startProgress(){
+                                    $(".cbp-qtprogress").removeAttr('style');
+                                    $(".cbp-qtprogress").animate({
+                                        width:"800px",
+                                    } , 8000);
+                                }
+
+                                _startProgress()
+                                setTimeout(fade, 8000);
+                            });
+                        </script>
+                
+            </div>
         </div>
+        
+        
+        
         <div class="ribbon2 l-box-lrg pure-g">
             <div class="l-box-lrg is-center pure-u-1" >
               <div class= "pure-u-med-1-1 pure-u-lrg-1-1" >
