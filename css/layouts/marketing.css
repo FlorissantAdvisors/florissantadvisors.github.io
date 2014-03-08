@@ -112,18 +112,13 @@ a.pure-button-primary {
     color: white;
     font-weight: 400;
     font-size: 120%;
-    //font-family: avenir;
-    
-    
-        font-weight: 500;
 
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin: 0.4em 0 0.3em 0;
     color: white;
     font-family: Avenir;
-    
-    
 }
 
 .home-menu .pure-menu-selected a {
@@ -171,7 +166,7 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 100px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     border: 3px solid white;
