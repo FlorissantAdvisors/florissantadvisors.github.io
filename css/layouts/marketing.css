@@ -2,11 +2,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
-   
 }
-
-
 
 /*
  * -- BASE STYLES --
@@ -48,8 +44,6 @@ label {
 
 .is-center {
     text-align: center;
-
-    
 }
 
 /*
@@ -110,10 +104,8 @@ a.pure-button-primary {
 
 .home-menu .pure-menu-heading {
     color: white;
-    font-weight: 400;
-    font-size: 120%;
-
     font-weight: 500;
+		font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin: 0.4em 0 0.3em 0;
@@ -186,9 +178,9 @@ a.pure-button-primary {
     letter-spacing: 0.05em;
     opacity: 0.8;
     font-size:100%;
-    //font-family:serif;
-    //font-family:avenir;
-    //font-weight: bold;  
+    /*  font-family:serif;
+    	font-family:avenir;
+    	font-weight: bold;   */
     font-variant: small-caps;
 }
 
@@ -204,7 +196,6 @@ a.pure-button-primary {
     min-height: 12%;
     z-index: 2;
     background: white;
-
 }
 
 /* This is the class used for the main content headers (<h1>) */
@@ -218,24 +209,13 @@ a.pure-button-primary {
 
 .vision-head {
     font-weight: 500;
-    font-size: 3em;
+    font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin: 0.4em 0 0.3em 0;
     color: white;
     font-family: Avenir;
 }
-
-.vision-head-white {
-    font-weight: 500;
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin: 0.4em 0 0.3em 0;
-    font-family: Avenir;
-}
-
-
 
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
@@ -280,6 +260,39 @@ a.pure-button-primary {
     background: #111;
 }
 
+
+.processcaptions {
+    font-weight: bold;
+    font-family: Avenir;
+    /* font-style: italic;
+    font-family: "proxima nova"; */
+    word-spacing:1px;
+    font-size: 1.5em;
+	
+}
+
+.vision-text {
+    font-style: italic;
+    font-family: Avenir;
+	/*font-weight: bold;
+	  font-family: "proxima nova"; */
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 1em;
+    
+}
+
+.nav-menu {
+    font-family: Avenir;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
+}
+
+#nav-menus {
+		display: none; /* Hide it on non-tablet or desktop displays */;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -291,24 +304,26 @@ a.pure-button-primary {
     body {
         font-size: 16px;
     }
-    /* We want to give the content area some more padding */
+
+		/* We want to give the content area some more padding */
     .content {
         padding: 1em;
     }
 
     /* We can align the menu header to the left, but float the
-    menu items to the right. */
+    	 menu items to the right. */
     .home-menu {
         text-align: left;
     }
-        .home-menu ul {
-            float: right;
-        }
+    
+		.home-menu ul {
+    		float: right;
+    }
 
     /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
+   .splash-container {
+        height: 800px;
+    }
 
     /* We decrease the width of the .splash, since we have more width
     to work with */
@@ -318,15 +333,25 @@ a.pure-button-primary {
     }
 
     .splash-head {
-        font-size: 250%;
+        font-size: 275%;
     }
 
+		.vision-head {
+    		font-size: 300%;
+		}
+	
+		.pure-menu-heading {
+				font-size: 275%;
+		}
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
         border: none;
     }
-
+	
+		#nav-menus {
+				display: block;
+		}
 }
 
 /*
@@ -337,39 +362,18 @@ a.pure-button-primary {
 @media (min-width: 78em) {
     /* We increase the header font size even more */
     .splash-head {
-        font-size: 300%;
+        font-size: 325%;
     }
-}
-
-h3 {
-    
-}
-
-.processcaptions {
-    font-weight: bold;
-    //font-style: italic;
-    font-family: Avenir;
-    //font-family: "proxima nova";
-    word-spacing:1px;
-    font-size: 1.5em;
-        
 	
-}
-
-.vision-text {
-	//font-weight: bold;
-    font-style: italic;
-    font-family: Avenir;
-	//font-family: "proxima nova";
-    font-size: 30px;
-    color: #FFFFFF;
-    line-height: 1em;
-    
-}
-
-.nav-menu {
-    font-family: Avenir;
-    font-weight:bold;
-    font-variant: small-caps;
-    letter-spacing: 0.2em;
+		.vision-head {
+    		font-size: 350%;
+		}
+	
+		.pure-menu-heading {
+				font-size: 325%;
+		}
+	
+		#nav-menus {
+				display: block;
+		}
 }

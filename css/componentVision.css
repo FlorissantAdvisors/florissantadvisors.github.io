@@ -9,17 +9,18 @@
 	font-style: normal;
 }
 
-body{font-family: 'Lato', Calibri, Arial, sans-serif; color: #47a3da}
 .mainVision{
-    width:800px; 
-    margin:1em auto 4em}
-.cbp-qtrotator{
-    width:800px; 
-    height:180px; 
+    /*width:800px;  */
+    margin:1em auto 4em;
+}
+.cbp-qtrotator {
+    /*width:800px;  
+    height:180px;  */
     position:relative; 
-  
     margin:0; 
-    padding-top:11px}
+    padding-top:11px;
+}
+
 .cbp-qtcontent{
     width:100%; 
     height:auto; 
@@ -27,15 +28,18 @@ body{font-family: 'Lato', Calibri, Arial, sans-serif; color: #47a3da}
     min-height:180px;
     top:0;
     z-index:2; 
-    display:none
-    
-
-
+		display: none;
 }
+
 .cbp-qtrotator .cbp-qtcontent.current{
-    display:block
-        }
-.cbp-qtrotator blockquote{margin:40px 0 0 0; padding:0}
+    display:block;
+}
+
+.cbp-qtrotator blockquote{
+	margin:40px 0 0 0;
+	padding:0;
+}
+
 .cbp-qtrotator blockquote p{
     font-size:2em;
     color:#888; 
@@ -45,9 +49,41 @@ body{font-family: 'Lato', Calibri, Arial, sans-serif; color: #47a3da}
     font-style:italic;
     letter-spacing: 0.01em;
     line-height: 0.9em;
-        }
-.cbp-qtrotator blockquote footer{font-size:1.2em}
-.cbp-qtrotator blockquote footer:before{content:'&#8213; '}
-.cbp-qtrotator .cbp-qtcontent img{float:right; margin:50px 0 0 50px}
-.cbp-qtprogress{position:absolute; background:#47a3da; height:1px; width:0%; z-index:1000}
+}
+
+.cbp-qtrotator blockquote footer{font-size:1.2em;}
+.cbp-qtrotator blockquote footer:before{content:'&#8213; ';}
+.cbp-qtrotator .cbp-qtcontent img{float:right; margin:50px 0 0 50px;}
+.cbp-qtprogress {
+	position:absolute;
+	background:#47a3da;
+	height:1px;
+	width:0%;
+	z-index:1000;
+}
+
+#hidden-content {
+	position: relative;
+	visibility: hidden;
+	width:100%; 
+ 	height:auto; 
+ 	min-height:180px;
+ 	top:0;
+ 	z-index:2; 
+}
+.vision-content-size {
+	font-size:0.75em;	
+}
+
+@media (min-width: 48em) {
+	.vision-content-size {
+		font-size: 150%;
+	}	
+}		
+
+@media (min-width: 78em) {
+	.vision-content-size {
+		font-size: 235%;
+	}	
+}		
 

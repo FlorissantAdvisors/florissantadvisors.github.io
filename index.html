@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Florissant advisors landing page. Algorithmic mediation; computer assisted negotiation.">
   <title>Florissant Advisors</title>
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.1/pure.css"> 
+  <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.1/pure.css"/> 
+-->
+	<link rel="stylesheet" href="pure.css"/>	
   <!--[if lte IE 8]>
   	<link rel="stylesheet" href="css/main-grid-old-ie.css">
   <![endif]-->
@@ -29,8 +31,8 @@
 <body>
 	<div class="header">
   	<div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-    	<a class="pure-menu-heading" href="">Florissant Advisors</a>
-      	<ul>
+    	<a class="pure-menu-heading" href="#">Florissant Advisors</a>
+      	<ul id="nav-menus">
         	<li class="nav-menu"><a href="#">Home</a></li>
           <li class="nav-menu"><a href="#vision">Vision</a></li>
           <li class="nav-menu"><a href="#process">Process</a></li>
@@ -50,11 +52,24 @@
   <div class="content-wrapper">
   	<a class="anchor" id="vision"></a>                
 		<div class="content ribbon">
-			<h1 class="vision-head is-center"> Our Vision </h1>                    
-			<div class="pure-g l-box pure-u-1">  
+			<h1 class="vision-head is-center"> Our Vision </h1>
+			<div class="pure-g l-box pure-u-1"> 
 				<div class="mainVision">
-					<div id="cbp-qtrotator" class="cbp-qtrotator">
-						<div class="cbp-qtcontent current">
+					<div class="cbp-qtrotator">
+						<span class="cbp-qtprogress"></span>
+						<div id="hidden-content" class="vision-content-size">
+							<blockquote>
+								<p>
+  This is some text that shold never be shown, but is in the background.
+	What often keeps negotiations from fulfilling their potential are ill-defined
+	preferences, a narrow or short-sighted outlook, and an ever-present skepticism 
+	of the human participant on the other side. As impartial mediators, we work
+	with all parties to understand and formalize their preferences. We are "for" 
+	both sides.
+								</p>
+							</blockquote>
+						</div>
+						<div class="cbp-qtcontent vision-content-size current">
 							<blockquote>
 								<p>
 	A business's success depends on the interactions between multiple parties. 
@@ -64,7 +79,7 @@
 								</p>
 							</blockquote>
 						</div>
-						<div class="cbp-qtcontent">
+						<div class="cbp-qtcontent vision-content-size">
 							<blockquote>
 								<p>
 	Negotiations can be like a risky battle for precious resources or a passive
@@ -73,7 +88,7 @@
 								</p>
 							</blockquote>
 						</div>
-						<div class="cbp-qtcontent">
+						<div class="cbp-qtcontent vision-content-size">
 							<blockquote>
 								<p>
 	What often keeps negotiations from fulfilling their potential are ill-defined
@@ -84,7 +99,7 @@
 								</p>
 							</blockquote>
 						</div>
-						<div class="cbp-qtcontent">
+						<div class="cbp-qtcontent vision-content-size">
 							<blockquote>
 								<p>
 	After a typical negotiation, one or both parties are left wondering if more 
@@ -94,7 +109,7 @@
 								</p>
 							</blockquote>
 						</div>
-						<div class="cbp-qtcontent">
+						<div class="cbp-qtcontent vision-content-size">
 							<blockquote>
 								<p>
 	Negotiations settled with Florissant mean your employees will quit less often,
@@ -103,14 +118,14 @@
 								</p>
 							</blockquote>
 						</div>
-						<div class="cbp-qtcontent">
+						<div class="cbp-qtcontent vision-content-size">
 							<blockquote>
-								<p>
-	Florissant Advisors. Negotiation for the 21st century.
+								<p class="is-center">
+									Florissant Advisors. <br>
+									Negotiation for the 21st century.
 								</p>
 							</blockquote>
 						</div>
-						<span class="cbp-qtprogress"></span>
 					</div>
 				</div>
 			</div>
@@ -319,7 +334,7 @@ total of (20 * 80 * 30 * 5) 240000 possible assignments.
 		</div>
 		<div class="content ribbon2">
 			<a class="anchor" id="contact"></a>
-			<h1 class="vision-head-white is-center">Contact Us</h1>
+			<h1 class="vision-head is-center">Contact Us</h1>
 			<div class="pure-g">
 				<div class="l-box-lrg pure-u-1 pure-u-med-2-5 pure-u-lrg-2-5">
 						<h4>Do you want to find out more?</h4>
@@ -366,26 +381,26 @@ total of (20 * 80 * 30 * 5) 240000 possible assignments.
 
         var next = divs.eq(nextIndex);
 
-        next.stop().fadeIn(1500, function() {
+        next.stop().fadeIn(1250, function() {
         	$(this).addClass('current');
         });
 
-        current.stop().fadeOut(1500, function() {
+        current.stop().fadeOut(1250, function() {
         	$(this).removeClass('current');
         	_startProgress()
-         	setTimeout(fade, 8000);
+         	setTimeout(fade, 11000);
         });
 			}
 
 			function _startProgress(){
    			$(".cbp-qtprogress").removeAttr('style');
         $(".cbp-qtprogress").animate({
-        	width:"800px",
+					width:"100%"
         } , 8000);
 			}
 
       _startProgress()
-      setTimeout(fade, 8000);
+      setTimeout(fade, 11000);
 		});
  	</script>
   <script src="js/jquery.cbpNTAccordion.min.js"></script>
